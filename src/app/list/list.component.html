@@ -1,0 +1,24 @@
+<table border="1">
+  <tr>
+    <th *ngFor="let col of cols">
+      {{col.header}}
+    </th>
+    <th class="text-center">
+      Ações
+    </th>
+  </tr>
+  <tr *ngFor="let w of weathers">
+    <td>
+      {{w.id}}
+    </td>
+    <td>
+      {{w.sol}}
+    </td>
+    <td>
+      {{w.av?w.av : 0}}
+    </td>
+    <td colspan="3">
+      <a [routerLink]="['/weather', w.id]"> Details </a>
+    </td>
+  </tr>
+</table>

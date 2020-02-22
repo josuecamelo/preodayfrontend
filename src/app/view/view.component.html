@@ -1,0 +1,25 @@
+<table border="1">
+  <tr>
+    <th *ngFor="let col of cols">
+      {{col.header}}
+    </th>
+  </tr>
+  <tr>
+    <td>
+      {{!weather.id ? "-" : weather?.id}}
+    </td>
+    <td>
+      {{!weather.sol ? "-" : weather?.sol}}
+    </td>
+    <td>
+      {{!weather.av ? "-" : weather?.av}}
+    </td>
+    <td>
+      {{!weather.min ? "-" : weather?.min}}
+    </td>
+    <td>
+      {{!weather.max ? "-" : weather?.max}}
+    </td>
+
+  </tr>
+</table>
